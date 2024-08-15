@@ -1,0 +1,17 @@
+./configure  --extra-libs="-lpthread -lm -ldhfilter -luavs3d -lavs3a"  \
+     --extra-ldflags=' -L /d/avs3a/ffmpeg/lib/ --static'  \
+      --enable-cross-compile \
+     --enable-gpl  \
+     --enable-libarcdav3a \
+     --enable-libuavs3d  \
+     --enable-static \
+     --disable-optimizations \
+     --disable-asm \
+     --disable-stripping \
+     --enable-nonfree \
+     --disable-ffplay \
+     --disable-ffprobe \
+     --disable-doc \
+     --extra-cflags=' -I /d/avs3a/ffmpeg/include/FilterEngine/  -static'  \
+    --pkg-config-flags="--static" \
+     --prefix=/d/avs3a/ffmpeg/bin
